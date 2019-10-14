@@ -1,0 +1,484 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../images_folder/back3.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    overflow: scroll;
+}
+
+.MainDiv{
+}
+
+/*---------------header---------------*/
+.HeaderDiv{
+    width: 100%;
+    height: auto;
+    background-color: #00508B;
+    overflow: hidden;
+    display:block;
+    /*align-items: center;*/
+    box-shadow: 0px 0px 15px 0px black;
+}
+
+.HeaderDiv img{
+    position: absolute;
+    width: 10%;
+    height: 75px;
+    float: left;
+}
+
+.HeaderDiv header{
+    color: white;
+    /*background-color: chocolate;*/
+    display: inline-block;
+    width: 50%;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 25%;
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#namelogoid{
+    /*margin-left: 70%;*/
+    float: right;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /*background-color: coral;*/
+    overflow: hidden;
+}
+#usernamespan{
+    font-family: "Times New Roman";
+    color: white;
+    float: right;
+}
+#usernameid{
+    text-decoration: underline;
+    font-weight: bold;
+}
+#logoutid{
+    font-weight: bold;
+    width: 70px;
+    height: 25px;
+    /*border: none;*/
+    background-color: transparent;
+    color: white;
+    float: right;
+    border-radius: 15px 15px 15px 15px;
+    margin-top: 10px;
+}
+#logoutid:hover{
+    box-shadow: 0px 0px 15px 1px white;
+    cursor: pointer;
+}
+/*=================================*/
+/*---------------navigation bar---------------*/
+
+.NavDiv #list_name{
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 15px;
+    font-weight: bold;
+    border-right: dashed 2px red;
+}
+.NavDiv ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+.NavDiv ul li{
+    float: left;
+}
+.NavDiv ul li a{
+    text-decoration: none;
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    /*font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+}
+.NavDiv ul .dropdown li{
+    text-decoration: none;
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    /*font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+}
+.NavDiv ul li .WorkloadOutBtnNav/*, .WorkloadInsideBtnNav*/{
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    /*font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+}
+.NavDiv ul li .WorkloadOutBtnNav:hover{
+    /*border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;*/
+}
+
+/*---------------dropdown list navigation bar---------------*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown #dropdown{
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 0px;
+    border: none;
+}
+/*.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border: none;
+    width: 100%;
+}
+.dropdown-content button:hover {
+    background-color: #B8B8B8;
+}*/
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+.dropdown .dropdown-content .WorkloadInsideBtnNav {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 12px 16px;
+}
+.dropdown .dropdown-content .WorkloadInsideBtnNav:hover {
+    background-color: #B8B8B8;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown #dropdownli:hover, .dropdown:hover #dropdownli {
+    background-color: #B3DFEC;
+    color: black;
+    /*border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;*/
+}
+/*================end dropdown list navigation bar=================*/
+
+/*-----------------popupmenu for random period navigation bar-----------------*/
+.Parent{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+.Child{
+    position: relative;
+    background-color: lightslategrey;
+    width: 50%;
+    height: auto;
+    transform: translate(50%, 50%);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    border: solid 2px white;
+    border-radius: 20px 5px 20px 5px;
+}
+.Btn{
+    position: relative;
+    float: right;
+    color: #aaaaaa;
+    font-size: 30px;
+    /*font-weight: bold;*/
+    border: none;
+    background-color: transparent;
+    margin-right: 10px;
+    width: 20px;
+}
+.Btn:hover{
+    cursor: pointer;
+    color: black;
+}
+.Parent .Child p{
+    margin: 10px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    font-size: 20px;
+    font-weight: bold;
+    clear: both;
+}
+.PopupDateContent{
+    padding: 10px;
+}
+.PopupPeriodLabel{
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+}
+.WorkloadDate{
+    font-size: 15px;
+    margin-right: 30px;
+    border: solid 2px white;
+    border-radius: 5px 5px 5px 5px;
+}
+.WorkloadDate:hover{
+    border: dashed 2px blue;
+}
+.WorkloadDate:focus{
+    border: solid 2px #18FC06;
+    background-color: black;
+    color: white;
+}
+.Parent .Child .PopupDateContent .SUBbtn{
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px 5px 10px 5px;
+    width: 100%;
+    height: 30px;
+    display: block;
+    margin-top: 30px;
+}
+.Parent .Child .PopupDateContent .SUBbtn:hover{
+    box-shadow: 0px 0px 10px 2px; 
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+/*=================end popupmenu for random period navigation bar===================*/
+
+/*.NavDiv ul .WorkloadDate{
+        display: block;
+        background-color: #333;
+        color: white;
+        padding: 15px 20px;
+        font-family: inherit;
+        font-size: 15px;
+        font-weight: bold;
+        border: none;
+        float: left;
+        height: 17px;
+}/*date box of chosing period*/
+.NavDiv .NavList #project, #subsystem{
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    /*font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    width: auto;
+    height: 47.5px;
+    border: none;
+}/*select lists of project and subsystem*/
+.NavDiv .NavList #project{
+    /*border-right: dashed 2px red;
+    border-left: dashed 2px red;*/
+}/*select list of project*/
+.NavDiv .NavList #subsystem{
+    /*border-right: dashed 2px red;*/
+}/*select list of subsystem*/
+.NavDiv .NavList #project:hover{
+    background-color: #B3DFEC;
+    color: black;
+    transition-duration: 1s;
+    /*border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;*/
+}/*select list of project (hover)*/
+.NavDiv .NavList #subsystem:hover{
+    background-color: #B3DFEC;
+    color: black;
+    transition-duration: 1s;
+    /*border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;*/
+}/*select list of subsystem (hover)*/
+/*.NavDiv ul .WorkloadDate:hover{
+        background-color: white;
+        color: black;
+}/*date box of chosing period (hover)*/
+.NavDiv #HorRight{
+    float: right;
+    text-align: center;
+}
+.NavDiv ul li a:hover{
+    background-color: #B3DFEC;
+    color: black;
+    transition-duration: 1s;
+    /*border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;*/
+}
+.NavDiv ul #dropdownli:hover{
+    background-color: #B3DFEC;
+    color: black;
+    transition-duration: 1s;
+}
+.NavDiv ul li button:hover{
+    background-color: #B3DFEC;
+    color: black;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+/*================end navigation bar=================*/
+/*---------------body---------------*/
+.BodyDiv{
+    width: 100%;
+    height: auto;
+    /*background-color: #D9D9D9;*/
+}
+.InfoDiv .ResNum{
+    margin: 0px;
+    padding: 5px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    font-size: 20px;
+    float: left;
+}
+.InfoDiv .ResNum span{
+    font-weight: bold;
+    color: black;
+}
+
+/*
+caption{
+        font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+        font-size: 20px;
+}
+*/
+
+.BodyDiv table{
+    max-width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap: break-word;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.BodyDiv table a{
+    color: black;
+    text-decoration: none;
+}
+/*.BodyDiv table tr:hover a:hover{
+        color: chartreuse;
+        font-weight: bold;
+        text-decoration-line: underline;
+}*/
+.BodyDiv table tr{
+    height: 40px;
+}
+.BodyDiv table tr th{
+    /*border: solid 2px black;*/
+    padding: 5px;
+    background-color: #7583AA;
+}
+.BodyDiv table tr:hover th{
+    color: black;
+}
+.BodyDiv table tr:hover select{
+    color: black;
+}
+.BodyDiv table tr:hover option{
+    color: black;
+}
+.BodyDiv table tr td{
+    /*border: solid 2px black;*/
+    padding: 5px;
+}
+.BodyDiv table .border{
+    border-left: solid 1px black;
+}
+.BodyDiv table tr select{
+    border: none;
+    background-color: transparent;
+}
+.BodyDiv table tr select:focus{
+    outline: none;
+}
+.BodyDiv table tr td .WorkloadResourceList{
+    border: none;
+}
+/*.BodyDiv table tr:nth-child(even){
+        background-color: chocolate;
+}*/
+
+/*.BodyDiv table tr:nth-child(odd){
+        background-color: coral;
+}*/
+
+.BodyDiv table tr:hover{
+    background-color: #BB9A9B;
+    color: black;
+}
+/*.BodyDiv table tr:hover a{
+        background-color: #828282;
+        color: white;
+}*/
+.private{
+    border-radius: 5px;
+    cursor: pointer;
+}
+.private:hover{
+    box-shadow: 0px 0px 15px 0px black;
+    background-color: #18FC06;
+}
+/*================end body=================*/
+/*---------------footer---------------*/
+.FooterDiv{
+    width: auto;
+    height: auto;
+}
+.FooterDiv footer{
+    background-color: orange;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+/*================end footer=================*/

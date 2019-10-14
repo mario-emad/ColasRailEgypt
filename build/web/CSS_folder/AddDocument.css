@@ -1,0 +1,314 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.MainDiv{
+}
+
+/*---------------header---------------*/
+.HeaderDiv{
+    width: 100%;
+    height: auto;
+    background-color: #00508B;
+    overflow: hidden;
+    display:block;
+    /*align-items: center;*/
+    box-shadow: 0px 0px 15px 0px black;
+}
+
+.HeaderDiv img{
+    position: absolute;
+    width: 10%;
+    height: 75px;
+    float: left;
+}
+
+.HeaderDiv header{
+    color: white;
+    /*background-color: chocolate;*/
+    display: inline-block;
+    width: 50%;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 25%;
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#namelogoid{
+    /*margin-left: 70%;*/
+    float: right;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /*background-color: coral;*/
+    overflow: hidden;
+}
+#usernamespan{
+    font-family: "Times New Roman";
+    color: white;
+    float: right;
+}
+#usernameid{
+    text-decoration: underline;
+    font-weight: bold;
+}
+#logoutid{
+    font-weight: bold;
+    width: 70px;
+    height: 25px;
+    /*border: none;*/
+    background-color: transparent;
+    color: white;
+    float: right;
+    border-radius: 15px 15px 15px 15px;
+    margin-top: 10px;
+}
+#logoutid:hover{
+    box-shadow: 0px 0px 15px 1px white;
+    cursor: pointer;
+}
+/*=================================*/
+/*---------------navigation bar---------------*/
+
+.NavDiv{
+    background-color: #333;
+    float: left;
+    width: 15%;
+    height: auto;/*change when open form or more*/
+    min-height: 1000px;
+    /*border-right: solid 2px red;*/
+}
+
+.NavDiv ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    /*position: sticky;*/
+    top: 0;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.NavDiv ul li{
+}
+
+.NavDiv ul li a{
+    text-decoration: none;
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#HorRight{
+}
+
+.NavDiv ul li a:hover{
+    border-radius: 50px 50px 50px 50px;
+    background-color: #B3DFEC;
+    color: black;
+    transition-duration: 1s;
+}
+
+/*=================================*/
+/*---------------body---------------*/
+
+.BodyDiv{
+    width: 85%;
+    height: auto;/*change when open form or more*/
+    min-height: 1000px;
+    background-image: url("../images_folder/back3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*---------------hor nav bar---------------*/
+
+.HorNav{
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.HorNav ul{
+    list-style-type: none;
+    background-color: #333;
+    margin: 0px;
+    height: auto;
+    float: left;
+    width: 100%;
+}
+
+.HorNav ul li a{
+    text-decoration: none;
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;;
+    /*font-family: "DejaVu Sans", Segoe, "Segoe UI", "Trebuchet MS", Verdana, "sans-serif";*/
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    width: 150px;
+    text-align: center;
+}
+
+.HorNav #right{
+    float: right;
+}
+
+.HorNav a:hover{
+    background-color: #B3DFEC;
+    color: black;
+    cursor: pointer;
+    transition-duration: 1s;
+    /*border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;*/
+}
+
+/*===============ending hor nav bar===============*/
+
+/*general editing*/
+.DocForm {
+    padding: 10px;
+    max-width: 100%;
+    overflow: hidden;
+}
+.DocForm label, input{
+    display: block;
+}
+.DocForm .main_label_form{
+    width: 519px;
+    min-width: 200;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    float: left;
+}
+.DocForm .label_form{
+    height: 50px;
+    width: 450px;
+    min-width: 200px;
+    padding: 10px;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    clear: both;
+    float: left;
+}
+.DocForm .text_form{
+    height: 50px;
+    width: auto;
+    min-width: 500px;
+    padding: 10px;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    float: left;
+}
+.DocForm .select_form{
+    height: 50px;
+    width: auto;
+    min-width: 500px;
+    padding: 10px;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    float: left;
+}
+.DocForm .text_form::placeholder{
+    opacity: 0.5;
+}
+.DocForm .select_form:focus{
+    /*outline: solid 2px #18FC06;*/
+    background-color: black;
+    color: white;
+}
+.DocForm .text_form:focus{
+    /*outline: solid 2px #18FC06;*/
+    background-color: black;
+    color: white;
+}
+.DocForm .text_form:hover{
+    /*outline: dashed 2px blue;*/
+    box-shadow: 0px 0px 0px 2px blue;
+    transition-duration: 0.5s;
+}
+.DocForm .select_form:hover{
+    /*outline: dashed 2px blue;*/
+    box-shadow: 0px 0px 0px 2px blue;
+    transition-duration: 0.5s;
+}
+.DocForm .form_but{
+    width: 48%;
+    height: 50px;
+    display: block;
+    float: left;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-weight: bold;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #004CFF;
+    color: black;
+}
+.DocForm .form_but:hover{
+    box-shadow: 0px 0px 10px 2px black;
+    cursor: pointer;
+    background-color: #7E88FF;
+}
+/*ending general editing*/
+
+/*===============ending body==================*/
+/*---------------footer---------------*/
+.FooterDiv{
+    width: 100%;
+    height: auto;
+    clear: both;
+}
+.FooterDiv footer{
+    background-color: orange;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+/*=================================*/

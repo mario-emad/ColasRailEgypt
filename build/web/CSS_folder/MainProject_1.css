@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../images_folder/background(opacity).png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.MainDiv{
+}
+
+/*---------------header---------------*/
+
+.HeaderDiv{
+    width: 100%;
+    height: auto;
+    background-color: #00508B;
+    /*background-image: url("../images/headerbackground(opacity).png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;*/
+    overflow: hidden;
+    /*border-bottom: 2px solid blue;*/
+    /*border-radius: 0px 0px 10px 10px;*/
+    display:flex;
+    align-items: center;
+    box-shadow: 0px 0px 15px 0px black;
+}
+
+.HeaderDiv img{
+    width: 20%;
+    height: 150px;
+    float: left;
+}
+
+.HeaderDiv header{
+    position: absolute;
+    right: 15%;
+    font-family: "Times New Roman";
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    /*font-family: "Comic Sans MS", cursive, sans-serif;*/
+    margin-left: 50px;
+    color: white;
+}
+
+/*=================================*/
+.BodyDiv{
+    width: 100%;
+    height: auto;/*change when open form or more*/
+    min-height: 1000px;
+    /*background-image: url("../images/background(opacity).png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;*/
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+form{
+    margin-top: 50px;
+}
+
+form .label_form{
+    height: 50px;
+    width: 30%;
+    padding: 10px;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-left: 35%;
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+}
+
+form .select_form{
+    height: 50px;
+    width: auto;
+    width: 30%;
+    padding: 10px;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-left: 35%;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    /*box-shadow: 5px 0px 15px 0px black;*/
+    outline: none;
+}
+
+form .select_form:focus{
+    outline: solid 2px #18FC06;
+    background-color: black;
+    color: white;
+}
+
+form .select_form:hover{
+}
+
+form .form_but{
+    width: 30%;
+    height: 50px;
+    display: block;
+    float: left;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-weight: bold;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #004CFF;
+    color: black;
+    margin-left: 35%;
+    /*outline: none;*/
+}
+form .form_but:hover{
+    box-shadow: 0px 0px 10px 2px black;
+    cursor: pointer;
+}

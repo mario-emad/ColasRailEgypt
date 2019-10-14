@@ -1,0 +1,382 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../images_folder/back3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.MainDiv{
+}
+
+/*---------------header---------------*/
+.HeaderDiv{
+    width: 100%;
+    height: auto;
+    background-color: #00508B;
+    overflow: hidden;
+    display:block;
+    /*align-items: center;*/
+    box-shadow: 0px 0px 15px 0px black;
+}
+
+.HeaderDiv img{
+    position: absolute;
+    width: 10%;
+    height: 75px;
+    float: left;
+}
+
+.HeaderDiv header{
+    color: white;
+    /*background-color: chocolate;*/
+    display: inline-block;
+    width: 50%;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 25%;
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#namelogoid{
+    /*margin-left: 70%;*/
+    float: right;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /*background-color: coral;*/
+    overflow: hidden;
+}
+#usernamespan{
+    font-family: "Times New Roman";
+    color: white;
+    float: right;
+}
+#usernameid{
+    text-decoration: underline;
+    font-weight: bold;
+}
+#logoutid{
+    font-weight: bold;
+    width: 70px;
+    height: 25px;
+    /*border: none;*/
+    background-color: transparent;
+    color: white;
+    float: right;
+    border-radius: 15px 15px 15px 15px;
+    /*margin-top: 10px;*/
+}
+#logoutid:hover{
+    box-shadow: 0px 0px 15px 1px white;
+    cursor: pointer;
+}
+/*=================================*/
+.BodyDiv{
+    width: 100%;
+    height: auto;/*change when open form or more*/
+    min-height: 1000px;
+    /*background-image: url("../images/background(opacity).png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;*/
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+form{
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+}
+
+form .label_form{
+    height: 30%;
+    overflow: hidden;
+    float: left;
+    width: 20%;
+    padding: 10px;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 30px;
+    /*margin-left: 35%;*/
+    margin-bottom: 15px;
+    display: block;
+    /*text-align: center;*/
+}
+
+form .select_form{
+    height: 30%;
+    width: 30%;
+    padding: 10px;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    /*box-shadow: 5px 0px 15px 0px black;*/
+    outline: none;
+    margin-top: 0.4%;
+    float: left;
+}
+
+form .select_form:focus{
+    outline: solid 2px #18FC06;
+    background-color: black;
+    color: white;
+}
+
+form .select_form:hover{
+}
+
+#spansummary {
+    height: 30%;
+    overflow: hidden;
+    float: left;
+    width: 20%;
+    padding: 10px;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 30px;
+    /*margin-left: 35%;*/
+    margin-bottom: 15px;
+    display: block;
+    /*text-align: center;*/
+}
+
+form .form_but{
+    width: 10%;
+    height: 50px;
+    display: block;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-weight: bold;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #004CFF;
+    color: black;
+    margin-left: 5%;
+    margin-top: 0.2%;
+    /*outline: none;*/
+    float: left;
+}
+form .form_but:hover{
+    box-shadow: 0px 0px 10px 2px black;
+    cursor: pointer;
+}
+
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 98%;
+    border: solid 2px black;
+    margin-left: 15px;
+}
+
+th{
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    border: solid 2px black;
+    background-color: #00508B;
+    color: white;
+    text-align: center;
+    font-family: "Times New Roman";
+}
+
+td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    border: solid 1px black;
+    text-align: center;
+    font-family: "Times New Roman";
+}
+
+.fcc{
+    background-color: skyblue;
+    color: black;
+}
+
+tr:hover{
+    background-color: #BB9A9B;
+}
+
+td:hover{
+    background-color: #C05D60;
+}
+
+.fcc:hover{
+    background-color: skyblue;
+}
+
+#prodiv{
+    /*background-color: graytext;*/
+    overflow: hidden;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.createid{
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    float: left;
+    clear: both;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-weight: bold;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    /*box-shadow: 5px 0px 15px 0px black;*/
+    outline: none;
+}
+
+.describeid{
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 100%;
+    height: 100px;;
+    resize: none;
+    float: left;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-weight: bold;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    /*box-shadow: 5px 0px 15px 0px black;*/
+    outline: none;
+    clear: left;
+}
+
+.createbutid{
+    width: 30%;
+    height: 30px;
+    display: block;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #004CFF;
+    color: black;
+    margin-left: 0px;
+    margin-top: 20px;
+    /*outline: none;*/
+    float: right;
+}
+
+.createbutid:hover{
+    box-shadow: 0px 0px 10px 2px black;
+    cursor: pointer;
+}
+
+.fsadd{
+    width: 100%;
+    /*margin-left: 15px;*/
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px 5px 20px 5px;
+    background-color: #B0C1D0;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.fsdel{
+    width: 100%;
+    /*margin-left: 15px;*/
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px 5px 20px 5px;
+    background-color: #B0C1D0;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.deletebutid{
+    width: 30%;
+    height: 30px;
+    display: block;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #004CFF;
+    color: black;
+    margin-left: 0px;
+    margin-top: 20px;
+    /*outline: none;*/
+    float: right;
+}
+
+.deletebutid:hover{
+    box-shadow: 0px 0px 10px 2px black;
+    cursor: pointer;
+}
+
+.selectdelete{
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    float: left;
+    clear: both;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-weight: bold;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    /*box-shadow: 5px 0px 15px 0px black;*/
+    outline: none;
+}
+
+.spandivpro{
+    font-family: "Times New Roman";
+    margin-top: 0px;
+}
+
+#secdiv{
+    /*background-color: greenyellow;*/
+    overflow: hidden;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    padding-top: 50px;
+}

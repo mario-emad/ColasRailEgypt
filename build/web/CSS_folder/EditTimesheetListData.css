@@ -1,0 +1,293 @@
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+/*    background-image: url("../images_folder/back3.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;*/
+}
+
+/*---------------header---------------*/
+
+.HeaderDiv{
+    width: 100%;
+    height: auto;
+    background-color: #00508B;
+    /*background-image: url("../images/headerbackground(opacity).png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;*/
+    overflow: hidden;
+    /*border-bottom: 2px solid blue;*/
+    display:flex;
+    align-items: center;
+}
+
+.HeaderDiv img{
+    width: 10%;
+    height: 75px;
+    float: left;
+}
+
+.HeaderDiv header{
+    position: absolute;
+    left: 30%;
+    font-family: "Times New Roman";
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    /*font-family: "Comic Sans MS", cursive, sans-serif;*/
+    margin-left: 50px;
+    color: white;
+}
+
+/*=================================*/
+
+
+/*--------------- popup menu ---------------*/
+.Parent{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.Child{
+    position: relative;
+    background-color: lightslategrey;
+    width: 70%;
+    height: auto;
+    transform: translate(20%, 10%);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    overflow: hidden;
+    border: solid 2px white;
+    border-radius: 20px 5px 20px 5px;
+}
+
+.Btn{
+    position: relative;
+    float: right;
+    color: #aaaaaa;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+}
+
+.Btn:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.Child h1{
+    margin: 10px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+.Child p{
+    margin: 10px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    font-weight: bold;
+}
+
+.Child span{
+    color: white;
+    text-decoration-line: underline;
+}
+
+.Child input{
+    margin: 10px;
+    font-family: inherit;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 70%;
+    float: right;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+}
+
+.Child input:focus{
+    background-color: black;
+    color: white;
+}
+
+.Parent .Child input:hover{
+    box-shadow: 0px 0px 0px 2px blue;
+    transition-duration: 0.5s;
+}
+
+.Parent .Child .select_form{
+    margin: 10px;
+    font-family: inherit;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 70%;
+    float: right;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+}
+
+.Parent .Child .select_form:focus{
+    background-color: black;
+    color: white;
+}
+
+.Parent .Child .select_form:hover{
+    box-shadow: 0px 0px 0px 2px blue;
+    transition-duration: 0.5s;
+}
+
+
+.Parent .Child label{
+    margin: 10px;
+    font-family: inherit;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    height: 30px;
+}
+
+
+.Parent .Child .area_form{
+    margin: 10px;
+    font-family: inherit;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 70%;
+    float: right;
+    height: 120px;
+    background-color: white;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+}
+
+.Parent .Child .area_form:focus{
+    background-color: black;
+    color: white;
+}
+
+.Parent .Child .area_form:hover{
+    box-shadow: 0px 0px 0px 2px blue;
+    transition-duration: 0.5s;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.Child #import_btn{
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 15px;
+    float: right;
+    margin: 10px;
+    border: none;
+    border-radius: 10px 5px 10px 5px;
+    width: 70%;
+    height: 30px;
+    clear: both;
+    display: block;
+    /*	float: left;*/
+}
+
+.Child #import_btn:hover{
+    box-shadow: 0px 0px 10px 2px black;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+/*=================================*/
+table{
+    /*border: solid 2px black;*/
+    background-color: #00508B;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+table td{
+    /*width: 50%;*/
+    background-color: white;
+    /*border: solid 2px black;*/
+}
+input, select{
+    width: 100%;
+}
+
+/*////////////////%%%%%%%%%%%%%%////////////////////*/
+/*////////////////%%%%%%%%%%%%%%////////////////////*/
+table tr td .label_form{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    font-size: 20px;
+    font-weight: bold;
+    clear: both;
+    float: left;
+}
+table tr td .text_form{
+    width: 100%;
+    padding: 10px;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    float: left;
+}
+table tr td .form_but{
+    width: 30%;
+    height: 50px;
+    display: block;
+    float: left;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    /*margin-top: 20px;*/
+    background-color: #004CFF;
+    color: black;
+    /*margin-left: 30%;*/
+}
+table tr td .text_form:hover{
+    
+}
+table tr td .text_form:focus{
+    /*	outline: solid 2px #18FC06;*/
+    background-color: black;
+    color: white;
+}
+table tr td .form_but:hover{
+    /*box-shadow: 0px 0px 10px 2px black;*/
+    cursor: pointer;
+    background-color: #7E88FF;
+}
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/

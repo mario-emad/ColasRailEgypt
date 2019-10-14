@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.MainDiv{
+}
+
+/*---------------header---------------*/
+
+.HeaderDiv{
+    width: 100%;
+    height: auto;
+    background-color: #00508B;
+    overflow: hidden;
+    /*border-bottom: 2px solid red;*/
+    display:flex;
+    align-items: center;
+}
+
+.HeaderDiv img{
+    width: 20%;
+    height: 150px;
+    float: left;
+}
+
+.HeaderDiv header{
+    position: absolute;
+    right: 15%;
+    font-family: "Times New Roman";
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    /*font-family: "Comic Sans MS", cursive, sans-serif;*/
+    margin-left: 50px;
+    color: white;
+}
+
+/*=================================*/
+/*---------------navigation bar---------------*/
+
+/*.NavDiv #list_name{
+        display: block;
+        background-color: black;
+        color: white;
+        padding: 15px 20px;;
+        font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+        font-size: 15px;
+        font-weight: bold;
+        border-right: dashed 2px red;
+}*/
+
+.NavDiv ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    /*position: sticky;*/
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.NavDiv ul li{
+    float: left;
+}
+
+.NavDiv ul li a{
+    text-decoration: none;
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;;
+    /*font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.NavDiv #HorRight{
+    float: right;
+}
+
+.NavDiv ul li a:hover{
+    background-color: #B3DFEC;
+    color: black;
+    cursor: pointer;
+    transition-duration: 1s;
+    /*border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;*/
+}
+
+/*=================================*/
+/*---------------body---------------*/
+.BodyDiv{
+    width: 100%;
+    height: auto;
+    /*background-color: #DFCCCC;*/
+    background-color: #D9D9D9;
+}
+
+.InfoDiv .ResNum{
+    margin: 0px;
+    padding: 5px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    font-size: 20px;
+    float: left;
+}
+
+.InfoDiv .ResNum span{
+    font-weight: bold;
+    color: black;
+}
+
+/*
+caption{
+        font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+        font-size: 20px;
+}
+*/
+
+.BodyDiv table{
+    min-width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap: break-word;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px 0px black;
+}
+
+.BodyDiv table tr{
+    height: 40px;
+}
+.BodyDiv table .border{
+    border-left: solid 1px black;
+}
+
+.BodyDiv table tr th{
+    /*border: solid 2px black;*/
+    font-size: 15px;
+    background-color: #7583AA;
+    padding: 5px;
+}
+.BodyDiv table tr td{
+    /*border: solid 2px black;*/
+    font-size: 20px;
+    padding: 5px;
+}
+.BodyDiv table a{
+    color: black;
+    text-decoration: none;
+}
+
+.BodyDiv table tr:hover a:hover{
+    color: blue;
+    /*font-weight: bold;*/
+    text-decoration-line: underline;
+}
+.BodyDiv table tr:hover a{
+    background-color: #BB9A9B;
+    color: black;
+}
+
+/*.BodyDiv table tr:nth-child(even){
+        background-color: chocolate;
+}*/
+
+/*.BodyDiv table tr:nth-child(odd){
+        background-color: coral;
+}*/
+
+.BodyDiv table tr:hover{
+    background-color: #BB9A9B;
+    color: black;
+}
+.BodyDiv table tr:hover th{
+    color: black;
+}
+
+/*=================================*/
+/*---------------footer---------------*/
+.FooterDiv{
+    width: auto;
+    height: auto;
+}
+.FooterDiv footer{
+    background-color: orange;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+/*=================================*/
